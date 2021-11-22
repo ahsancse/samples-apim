@@ -20,6 +20,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
+      - name: cd to graphql directory
+        run: |
+          cd graphql-backend    
 
       - name: npm install, build, and test
         run: |
